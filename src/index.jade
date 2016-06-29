@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(meta name="viewport", content="width=device-width, initial-scale=1")
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+  link(rel="stylesheet", href="assets/css/app.css")
+  link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+  title Willis Allen
+
+body
+
+  // Sign in Link
+  section#sign-in
+    .container: .row
+      .col-md-2.col-md-offset-10
+        p Sign In <i class="material-icons">contact_mail</i>
+
+  // Main Nav
+  section#main-nav
+    .container: .row
+      .col-md-5.logo
+        img(src="assets/imgs/willis-allen-christies-1x.png", alt="", srcset="assets/imgs/willis-allen-christies-1x.png 1x, assets/imgs/willis-allen-christies-2x.png 2x, assets/imgs/willis-allen-christies-3x.png 3x, assets/imgs/willis-allen-christies-4x.png 4x")
+      .col-md-7
+        .main_menu
+          nav: ul
+            li: a(href="#") FIND A HOME
+            li: a(href="#") LIST WITH US
+            li: a(href="#") COMMUNITIES
+            li: a(href="#") AGENTS
+            li: a(href="#") RELOCATION
+            li: a.active(href="#") ABOUT
+
+  // Sub Nav
+  section#quick-search
+    .container: .row
+      .col-md-5.align-center
+        input(type="text" placeholder="Adress, City, ZIP or MLS#")
+        input(type="submit" name= "SubmitSearch" value="SEARCH >").hidden
+        button.btn-skel(type="submit") SEND <i class="material-icons">chevron_right</i>
+
+      .col-md-7
+        .sub_menu
+          nav: ul
+            li: a(href="#") new listings
+            li: a(href="#") open houses
+            li: a(href="#") rentals
+            li: a(href="#") map search
+            li: a(href="#") advanced
+
+  // Bread Crumbs
+  section#breadcrumbs
+    .container: .row
+      .col-md-5
+        ul
+          li: a(href="#") home <i class="material-icons">chevron_right</i>
+          li: a(href="#") about <i class="material-icons">chevron_right</i>
+          li: a(href="#") our offices <i class="material-icons">chevron_right</i>
+          li: a.active(href="#") Downtown San Diego Office
+
+  // Main Content
+  section#main-content
+    h1.office-location downtown san diego office
+
+    .container: .row
+      .col-md-8.col-md-offset-2
+
+        // Office Contact Info and CTA
+        .row
+          .col-md-8
+            img.office-picture(src="assets/imgs/office.jpg", alt="")
+          .col-md-4
+            .row
+              .col-xs-6.col-md-12.directions
+                p 360 5th Avenue
+                p San Diego, CA 92101
+                a(href="#") <i class="material-icons">drive_eta</i>Driving Directions
+              .col-xs-6.col-md-12.contact
+                p Phone: (619) 238-8065
+                p Fax: (619) 238-8065
+                a(href="#") <i class="material-icons">email</i>Email Us
+            .cta
+              button.btn-skel.btn-large agent roster  <i class="material-icons">chevron_right</i>
+              button.btn-skel.btn-large office listings <i class="material-icons">chevron_right</i>
+
+        // Office Info
+        .row
+          .col-md-12
+
+            article.office-article
+              header: h2 downtown san diego, ca
+              p In 1869 Alonzo Horton, who many consider the father of San Diego, built a wharf at the foot of Fifth Avenue that cost about $45,000. On March 24, he sold $5,500 worth of commercial and residential lots in one day and San Diego began to boom. It took more than a hundred years for the revitalization to really catch on, and now San Diego has been transformed into one of the country’s newest and most dynamic metropolitan areas. “There is simply no other community like downtown San Diego in my opinion,” says downtown specialist Pat Edmondson. “I call it a small town-big city because it is so friendly. What I really enjoy is the ‘walkability’ of the city—everything here is accessible without a car. You can get to work, shopping, schools, recreation, entertainment, public transportation and much more all on foot.” Downtown San Diego is home to eight distinctive neighborhoods, including Core, Columbia, Cortez Hill, East Village, Gaslamp Quarter, Horton Plaza, Little Italy and Marina.
+
+            article.office-article
+              header: h2 about our office
+              p Our downtown San Diego office has been successfully assisting clients through the home buying and selling process since the beginning. The office is represented by more than 30 real estate agents, all of whom are specialized and extremely knowledgeable about the downtown San Diego market. If you are in the area, please don’t hesitate to stop by our office.
+            
+            // Office Tour
+            .row
+              .col-md-4
+                button.btn-skel.btn-large tour this office <i class="material-icons">chevron_right</i>
+
+        // Office Staff
+        .row
+          .col-sm-5
+            .staff-card
+              h2.title  OFFICE MANAGER
+              figure.picture
+                img.picture(src="assets/imgs/agent-1-1x.jpg", alt="", srcset="assets/imgs/agent-1-1x.jpg 1x, assets/imgs/agent-1-2x.jpg 2x, assets/imgs/agent-1-3x.jpg 3x")
+                figcaption
+                  span ELIZABETH
+                  span PRITSCHER_LEWIS <i class="material-icons">chevron_right</i>
+              p.phone-number (858) 459-4033
+              a.email(href="#") EMAIL ME
+              p.license CalBRE# 00123456
+
+          .col-sm-5.col-sm-offset-1
+            .staff-card
+              h2.title OFFICE BROKER
+              figure.picture
+                img.picture(src="assets/imgs/agent-2-1x.jpg", alt="", srcset="assets/imgs/agent-2-1x.jpg 1x, assets/imgs/agent-2-2x.jpg 2x, assets/imgs/agent-2-3x.jpg 3x")
+                figcaption
+                  span KRISTINA
+                  span PTHOMAS <i class="material-icons">chevron_right</i>
+              p.phone-number (858) 459-4033
+              a.email(href="#") EMAIL ME
+              p.license CalBRE# 00123456
+
+  // Contact Form
+  section#contact-form
+    .container: .row
+      .col-md-7.col-md-offset-2
+        .form-wrapper
+          h2.form-title CONTACT THE OFFICE
+          
+          // Form Input Fields
+          form(method="post" action="")
+            .row
+              .col-sm-6
+                input(type="text" placeholder="First Name")
+              .col-sm-6
+                input(type="text" placeholder="Last Name")
+              .col-sm-6
+                span EMAIL ADDRESS
+                input(type="text" placeholder="email Address")
+              .col-sm-6
+                input(type="text" placeholder="Phone (optional)")
+              .col-sm-6
+                input(type="text" placeholder="ZIP Code (optinal)")
+              .col-sm-6
+                select(name="reason" placeholder="test")
+                  option(value="" disabled selected) What Brought you Here?
+                  option(value="newspaper") Newspaper
+                  option(value="friend") Friend
+                  option(value="craigslist") Craigslist
+                  option(value="other") Other
+              .col-sm-12
+                textarea(name="msg" rows="5" placeholder="Type your message here")
+
+              // Respond Method  
+              .col-xs-6.col-md-4
+                p PLEASE RESPOND:
+                ul
+                  li  
+                    input(type="radio" name="contactMethod" value="phone")
+                    label(for="contactMethod") By Phone
+                  li
+                    input(type="radio" name="contactMethod" value="email")
+                    label(for="contactMethod") By Email
+
+              // Respond Time  
+              .col-xs-6.col-md-4
+                p IN THE:
+                ul
+                  li  
+                    input(type="radio" name="contactTime" value="morning")
+                    label(for="contactTime") Morning
+                  li
+                    input(type="radio" name="contactTime" value="afternoon")
+                    label(for="contactTime") Afternoon
+                  li
+                    input(type="radio" name="contactTime" value="evening")
+                    label(for="contactTime") Evening
+
+              // Submit button
+              .col-md-4
+                 input(type="submit" name="SubmitContact" value="SEND").hidden
+                 button.btn-skel.btn-large(type="submit") SEND <i class="material-icons">chevron_right</i>
